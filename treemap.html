@@ -24,7 +24,9 @@
 
     <script>
         d3.json("https://api.myjson.com/bins/meo0d").then(function(dataset) {
-            new d3plus.Treemap().data(dataset).groupBy(["genero","etnico"]).select("#chart").sum("cantidad").render()
+            new d3plus.Treemap().data(dataset).groupBy(["genero","etnico"]).select("#chart").sum("cantidad")
+
+            .render()
         })
     </script>
 </body>

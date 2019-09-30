@@ -69,12 +69,12 @@ nav a{
 
 nav a.actual{
     color:white;
-    background:black;
+    background:#af8dc3;
 }
 
 nav a:hover{
     color:white;
-    background:black;
+    background:#af8dc3;
 }
 
 div#home{
