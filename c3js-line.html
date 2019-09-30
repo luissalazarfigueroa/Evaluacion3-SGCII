@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.1/c3.min.css">
+    <title>C3.js</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.1/c3.min.js"></script>
+</head>
+
+<body>
+  <nav class="navegador">
+      <a href="index.html" >Index</a> <a href="line.html">Line chart</a> <a href="bar.html">Bar chart</a> <a href="doughnut.html">Doughnut chart</a> <a href="c3js-line.html" class="actual">Line Chart</a> <a href="treemap.html">Treemap</a>
+  </nav>
+  <nav class="descripcion">
+    Participación de artistas por genero en las exposiciones itinerantes en el MNBA durante los últimos 10 años
+
+  </nav>
+
+      <div id="chart"></div>
+
+      <script>
+
+      var chart = c3.generate({
+          data: {
+              x: 'x',
+      //        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
+              columns: [
+                  ['x', '2009', '2010', '2011', '2012', '2013', '2014','2015','2016','2017','2018','2019'],
+      //            ['x', '20130101', '20130102', '20130103', '20130104', '20130105', '20130106'],
+                  ['Hombres', 12, 69, 39, 26, 19, 25,38,22,28,9,30],
+                  ['Mujeres', 9, 17, 9, 49, 5, 8,23,3,12,15,20]
+              ]
+          },
+
+      });
+
+      </script>
+
+</body>
+
+</html>
